@@ -141,6 +141,16 @@ int coda = rand() % 999;
                     while(true){
                         cout << "You have decided to try to open the lockbox. Guess the three-digit code: " << endl;
                         cin >> choiice;
+
+
+                        if(choiice > coda){
+                            cout << "Lower." << endl;
+                        }
+
+                        if(choiice < coda){
+                            cout << "Higher." << endl;
+                        }
+                        
                         if(choiice == coda){
                             cout << "You opened the lockbox! You have gained 2 supplies!" << endl;
                             supplies += 2;
