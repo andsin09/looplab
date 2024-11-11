@@ -155,6 +155,9 @@ int coda = rand() % 999;
                     
                 }
 
+                else{
+                    cout << "Invalid. Day Wasted." << endl;
+                }
 
                 getline(cin, empty);
                 
